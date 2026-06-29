@@ -1,4 +1,4 @@
-console.log('client side js')
+
 
 const weatherForm=document.querySelector('form')
 const searchInput=document.querySelector('input')
@@ -28,11 +28,11 @@ weatherForm.addEventListener('submit',(e)=>{
         if(data.error) {
 
             document.querySelector('.loader').style.display='none'              
-                messageTwo.style.display='none'
-                temperatureDumperWrapper.style.display='none'
+            messageTwo.style.display='none'
+            temperatureDumperWrapper.style.display='none'
                 
-                messageOne.style.display='block'
-                messageOne.textContent=''+data.error
+            messageOne.style.display='block'
+            messageOne.textContent=''+data.error
                 //return  console.log(data.error)
 
             // messageOne.textContent=data.error
