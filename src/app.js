@@ -12,7 +12,7 @@ const forecast=require('./utils/forecast')
 // console.log(path.join(__dirname,'../public'))
 
 const app=express()
-
+const port= process.env.PORT || 3000
 //setting up paths
 const publicDirectoryPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname, '../templates/views')
@@ -115,7 +115,7 @@ app.use('/*all',(req,res)=>{
 
 
 
-const myPort=3000
-app.listen(myPort,()=>{
-    console.log('surving on port', myPort)
+
+app.listen(port,()=>{
+    console.log('surving on port', port)
 })
