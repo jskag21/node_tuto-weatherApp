@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/app.js -e js,hbs,css,html,json"
+    "start": "nodemon ./src/app.js -e js,hbs,css,html,json"
   },
   "author": "jskag",
   "license": "ISC",
@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^5.2.1",
     "hbs": "^4.2.1",
+    "nodemon": "^3.1.14",
     "request": "^2.88.2"
   }
 }
