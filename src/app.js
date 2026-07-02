@@ -93,7 +93,8 @@ app.get('/help',(req,res)=>{
     //res.sendFile(path.join(__dirname, '../public/help1.html'))
     res.render('help',{
         text:'the help page content',
-        title:'Help'
+        title:'Help',
+        name:'Gloire Kaswa'
     })
 })
 
